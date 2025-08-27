@@ -1,0 +1,48 @@
+name: carteira_flutter
+description: Flutter app native-ready (android/ios/web) for Gitpod
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  fl_chart: ^0.66.0
+  intl: ^0.19.0
+  connectivity_plus: ^5.0.2
+  flutter_local_notifications: ^17.2.1+2
+  url_launcher: ^6.2.2
+  image_picker: ^1.0.4
+  file_picker: ^6.1.1
+  pdf: ^3.10.7
+  printing: ^5.11.1
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_native_splash: ^2.4.0
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/mock_positions.json
+    - assets/branding/
+
+
+flutter_native_splash:
+  color: "#ffffff"
+  color_dark: "#121212"
+  image: assets/branding/logo_carteira_plus_green.png
+  image_dark: assets/branding/logo_carteira_plus_gold.png
+  android: true
+  ios: true
+  web: true
+
+
